@@ -7,7 +7,7 @@
   "scripts": {
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon index.js",
-    "start": "node index.js",
+    "start": "node index",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
