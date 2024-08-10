@@ -8,12 +8,15 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY);
 
 const app = express();
-app.use(cors());
+
 app.use(express.json());
-app.use(cors({
-  origin: "https://eshop-9e618.web.app", 
+const corsOptions = {
+  origin: "https://eshop-9e618.web.app", // النطاق الخاص بالفرونت إند
   methods: "GET,POST",
-}));
+  allowedHeaders: "Content-Type",
+};
+
+app.use(cors(corsOptions));
 
 
 app.use(express.static("public"));
