@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start:frontend": "react-scripts start",
-    "start:backend": "nodemon server.js",
-    "start": "node server",
+    "start:backend": "nodemon index.js",
+    "start": "node index.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
